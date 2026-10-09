@@ -1,0 +1,28 @@
+{
+ "family": "majors_btc_eth",
+ "recommended": "5x",
+ "mechanical_rule_pick": {
+  "alt_selection": "1x (no setting passed; default)",
+  "majors": "dyn_c4"
+ },
+ "deviation_note": "Recommended 5x instead of the rule's dyn_c4 (~7x BTC/5x ETH): +0.14pp CAGR in WF does not justify cutting BTC liquidation distance from ~19% to ~14%.",
+ "lev_kw": {
+  "lev": 5
+ },
+ "params": {
+  "lev": 5,
+  "k": 2,
+  "enter_apr": 0.0,
+  "exit_apr": -0.2,
+  "lookback": 3,
+  "min_pos_frac": 0.0,
+  "delay": 1,
+  "risk_rule": true,
+  "hi": 1.5
+ },
+ "symbols": [
+  "BTCUSDT",
+  "ETHUSDT"
+ ],
+ "committed_at": "2026-10-09T17:22:11.386335+00:00"
+}

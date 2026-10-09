@@ -1,0 +1,10 @@
+[Unit]
+Description=funding-arb monitor once a day after the 00:00 UTC funding print
+
+[Timer]
+OnCalendar=*-*-* 00:30:00 UTC
+Persistent=true
+RandomizedDelaySec=120
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,18 @@
+# environments / tools / caches
+.venv/
+.uv-cache/
+.uv-python/
+tools/
+__pycache__/
+*.pyc
+.pytest_cache/
+# secrets
+.env
+# data, logs, runtime state (regenerate with the scripts)
+data/
+logs/
+paper/*.db
+paper/*.db-*
+ALARM.txt
+# large / regenerable research artifacts
+reports/*.pkl

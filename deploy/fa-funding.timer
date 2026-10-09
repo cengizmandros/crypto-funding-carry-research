@@ -1,0 +1,9 @@
+[Unit]
+Description=funding-arb funding cycle after each 8h settlement (4h/1h-interval prints are credited at the next cycle)
+
+[Timer]
+OnCalendar=*-*-* 00,08,16:03:00 UTC
+Persistent=true
+
+[Install]
+WantedBy=timers.target

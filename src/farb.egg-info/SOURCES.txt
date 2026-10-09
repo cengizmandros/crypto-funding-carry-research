@@ -1,0 +1,6 @@
+pyproject.toml
+src/farb/__init__.py
+src/farb.egg-info/PKG-INFO
+src/farb.egg-info/SOURCES.txt
+src/farb.egg-info/dependency_links.txt
+src/farb.egg-info/top_level.txt

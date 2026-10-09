@@ -1,0 +1,12 @@
+[Unit]
+Description=funding-arb paper: funding
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/funding-arb
+Environment=FA_HOME=%h/funding-arb
+ExecStart=%h/funding-arb/.venv/bin/python %h/funding-arb/scripts/paper_ctl.py funding
+Nice=10
+TimeoutStartSec=20min

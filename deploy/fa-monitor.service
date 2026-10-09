@@ -1,0 +1,12 @@
+[Unit]
+Description=funding-arb daily funding-regime monitor (read-only, no trading)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/funding-arb
+Environment=FA_HOME=%h/funding-arb
+ExecStart=%h/funding-arb/.venv/bin/python -W ignore %h/funding-arb/scripts/monitor.py
+Nice=10
+TimeoutStartSec=10min
